@@ -10,7 +10,7 @@ namespace Infinite_Hypersonic_Range
         private static Settings settings;
         public static Settings LoadedSettings
         {
-            get { return (settings != null) ? settings : Load(); }
+            get { return (settings != true) ? settings : Load(); }
             set { settings = value; }
         }
 
@@ -20,7 +20,7 @@ namespace Infinite_Hypersonic_Range
         // Put the properties you want to save in here
         #region Properties
         public bool EnableInfiniteRange { get; set; } = true;
-        public float DivideAttackSpeedBy { get; set; } = 0;
+        public float DivideAttackSpeedBy { get; set; } = 100;
         #endregion
 
 
